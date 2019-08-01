@@ -1,6 +1,18 @@
 {{#unless ready}}
     <h1>Loading ....</h1>
 {{/unless}}
+<button {{action "zoomOut"}}>Zoom Out</button>
+<button {{action "zoomOut"}}>Zoom In</button>
+<button {{ action "segment" "doug"}}>Segment</button>
+<button {{ action "removeSegment" "doug"}}>Remove Segment</button>
+<button {{action "addPoint"}}>Add Point</button>
+<button {{action "removePoint" "doug"}}>Remove Point</button>
+<button {{action "markStart" }}>Mark Start</button>
+<button {{action "markEnd" }}>Mark End</button>
+
+
+
+<button {{action "play"}}>Play</button>
 <div id="peaks-container"></div>
 <audio controls>
     <source src="{{audio}}" type="audio/mpeg">
